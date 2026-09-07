@@ -1,13 +1,13 @@
 ====================================================
-GAMERS BURNOUT WEBSITE
+GAMING CAFE WEBSITE
 Developer Handover & Deployment Guide
 ====================================================
 
 Author:
-Harshit
+Ambuj
 
 Date of Delivery:
-02 June 2026
+N/A
 
 Project Type:
 Gaming Cafe Website
