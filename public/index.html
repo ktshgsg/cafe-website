@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamers Burnout Gaming Cafe">
+	<title>Gamers Burnout</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+	<nav>
+
+		<h1>Gamers Burnout</h1>
+
+		<ul class="nav-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="setup.html">Setup</a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="games.html">Games</a></li>
+			<li><a href="tournaments.html">Tournaments</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+	</nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+	<div class="hero-content">
+
+		<span class="tag">
+			#1 Gaming Cafe Experience
+		</span>
+
+		<h2>
+			ENTER THE <br>
+			ULTIMATE <span>GAMING ARENA</span>
+		</h2>
+
+		<p>
+			High-end RTX gaming PCs, ultra-fast internet,
+			RGB battle stations, PlayStation zones,
+			VR gaming and esports tournaments —
+			all in one place.
+		</p>
+
+		<div class="hero-buttons">
+
+			<a href="pricing.html">
+				Book Your Seat
+			</a>
+
+			<a href="setup.html">
+				Explore Setup
+			</a>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="page">
+
+	<h2>Why Gamers Love Us</h2>
+
+	<div class="features-grid">
+
+		<div class="card">
+			<h3>⚡ RTX Gaming PCs</h3>
+			<p>
+				Smooth FPS gameplay powered by modern RTX GPUs.
+			</p>
+		</div>
+
+		<div class="card">
+			<h3>🎧 Premium Gaming Zone</h3>
+			<p>
+				RGB lighting, gaming chairs and immersive atmosphere.
+			</p>
+		</div>
+
+		<div class="card">
+			<h3>🏆 Esports Tournaments</h3>
+			<p>
+				Compete in Valorant, BGMI, FIFA and more.
+			</p>
+		</div>
+
+		<div class="card">
+			<h3>🚀 Ultra Fast Internet</h3>
+			<p>
+				Low ping gaming experience with ultra-fast speeds.
+			</p>
+		</div>
+
+	</div>
+
+</section>
+
+<footer>
+
+	<h2>Gamers Burnout</h2>
+
+	<p>
+		Built for gamers. Powered by passion.
+	</p>
+
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const els=document.querySelectorAll('.card,.game-card,.setup-card,.pricing-card,.tournament-card,.gallery-box,.info-box');
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('scroll-reveal');}});
+ },{threshold:0.15});
+ els.forEach(el=>io.observe(el));
+});
+</script>
+
+
+<script>
+document.addEventListener('mousemove',e=>{
+ document.body.style.setProperty('--x',e.clientX+'px');
+ document.body.style.setProperty('--y',e.clientY+'px');
+});
+</script>
+</body>
+</html>

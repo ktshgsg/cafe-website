@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamers Burnout Gaming Cafe">
+    <title>Tournaments | Gamers Burnout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h1>Gamers Burnout</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="setup.html">Setup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="page">
+
+    <div class="page-title">
+
+        <h2>Esports Tournaments</h2>
+
+        <p>
+            Competitive gaming events are coming soon to Gamers Burnout.
+        </p>
+
+    </div>
+
+    <div class="tournament-banner">
+
+        <div class="banner-content">
+
+            <span class="coming-tag">
+                Coming Soon
+            </span>
+
+            <h1>
+                BIG TOURNAMENTS <br>
+                ARE ON THE WAY
+            </h1>
+
+            <p>
+                We are preparing exciting esports tournaments
+                for Valorant, PUBG PC, FIFA, CS2 and more.
+                Stay connected for future announcements.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="tournament-grid">
+
+        <div class="tournament-card">
+
+            <h3>🎯 Valorant Tournament</h3>
+
+            <p>
+                Tactical 5v5 esports battles with exciting rewards.
+            </p>
+
+            <span>
+                Registration Opening Soon
+            </span>
+
+        </div>
+
+        <div class="tournament-card">
+
+            <h3>🎯 Counter Strike Tournament</h3>
+
+            <p>
+                Tactical 5v5 esports battles with exciting rewards.
+            </p>
+
+            <span>
+                Registration Opening Soon
+            </span>
+
+        </div>
+
+        <div class="tournament-card">
+
+            <h3>🔥 PUBG PC Scrims</h3>
+
+            <p>
+                Competitive gaming scrims and custom rooms.
+            </p>
+
+            <span>
+                Coming Soon
+            </span>
+
+        </div>
+
+        <div class="tournament-card">
+
+            <h3>⚽ FIFA Face-Off</h3>
+
+            <p>
+                Head-to-head PlayStation football tournaments.
+            </p>
+
+            <span>
+                Upcoming Event
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="notify-box">
+
+        <h2>
+            Want Tournament Updates?
+        </h2>
+
+        <p>
+            Contact us and stay updated for registrations,
+            announcements and prize pools.
+        </p>
+
+        <a href="contact.html">
+            Notify Me
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>Gamers Burnout</h2>
+
+    <p>
+        Your skills + our tools = confirmed win.
+    </p>
+
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const els=document.querySelectorAll('.card,.game-card,.setup-card,.pricing-card,.tournament-card,.gallery-box,.info-box');
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('scroll-reveal');}});
+ },{threshold:0.15});
+ els.forEach(el=>io.observe(el));
+});
+</script>
+
+
+<script>
+document.addEventListener('mousemove',e=>{
+ document.body.style.setProperty('--x',e.clientX+'px');
+ document.body.style.setProperty('--y',e.clientY+'px');
+});
+</script>
+</body>
+</html>

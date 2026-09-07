@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamers Burnout Gaming Cafe">
+    <title>Gallery | Gamers Burnout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h1>Gamers Burnout</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="setup.html">Setup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="page">
+
+    <div class="page-title">
+
+        <h2>Gallery</h2>
+
+        <p>
+            Explore the vibe of our gaming cafe arena.
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-box image-box gallery-1"><div class="gallery-overlay">Gaming Setup</div></div>
+        <div class="gallery-box image-box gallery-2"><div class="gallery-overlay">PS5 Zone</div></div>
+        <div class="gallery-box image-box gallery-3"><div class="gallery-overlay">PC Arena</div></div>
+        <div class="gallery-box image-box gallery-4"><div class="gallery-overlay">Tournament Moments</div></div>
+        <div class="gallery-box video-box"><video controls preload="metadata"><source src="videos/gallery-video1.mp4" type="video/mp4"></video></div>
+        <div class="gallery-box video-box"><video controls preload="metadata"><source src="videos/gallery-video2.mp4" type="video/mp4"></video></div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>Gamers Burnout</h2>
+
+    <p>
+        passion for gaming lives in every breath of us.
+    </p>
+
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const els=document.querySelectorAll('.card,.game-card,.setup-card,.pricing-card,.tournament-card,.gallery-box,.info-box');
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('scroll-reveal');}});
+ },{threshold:0.15});
+ els.forEach(el=>io.observe(el));
+});
+</script>
+
+
+<script>
+document.addEventListener('mousemove',e=>{
+ document.body.style.setProperty('--x',e.clientX+'px');
+ document.body.style.setProperty('--y',e.clientY+'px');
+});
+</script>
+</body>
+</html>

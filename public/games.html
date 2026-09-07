@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamers Burnout Gaming Cafe">
+    <title>Games | Gamers Burnout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>Gamers Burnout</h1>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="setup.html">Setup</a></li>
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="tournaments.html">Tournaments</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="games-hero">
+
+<div class="games-hero-content">
+
+<span class="games-tag">
+Ultimate Gaming Collection
+</span>
+
+<h1>
+PLAY THE BEST <br>
+GAMES HERE
+</h1>
+
+<p>
+Explore competitive esports titles, AAA adventures,
+PlayStation exclusives and mobile gaming favorites
+available at Gamers Burnout.
+</p>
+
+</div>
+
+</section>
+
+<section class="page">
+
+<div class="games-section">
+
+<div class="games-heading">
+<h2>💻 PC Gaming</h2>
+<p>High FPS competitive gaming experience.</p>
+</div>
+
+<div class="games-grid">
+
+<div class="game-card">
+<h3>Counter Strike 2</h3>
+<p>Competitive Tactical FPS</p>
+</div>
+
+<div class="game-card">
+<h3>Valorant</h3>
+<p>5v5 Tactical Shooter</p>
+</div>
+
+<div class="game-card">
+<h3>Fortnite</h3>
+<p>Battle Royale Action</p>
+</div>
+
+<div class="game-card">
+<h3>Minecraft</h3>
+<p>Sandbox Survival Game</p>
+</div>
+
+<div class="game-card">
+<h3>Apex Legends</h3>
+<p>Tactical team combat game</p>
+</div>
+
+<div class="game-card">
+<h3>PUBG PC</h3>
+<p>tactical battle royale team game</p>
+</div>
+
+<div class="game-card">
+<h3>Roblox</h3>
+<p>game filled with many exciting mini games</p>
+</div>
+
+</div>
+</div>
+
+<div class="games-section">
+
+<div class="games-heading">
+<h2>🎮 PlayStation 5</h2>
+<p>Exclusive console gaming experience.</p>
+</div>
+
+<div class="games-grid">
+
+<div class="game-card">
+<h3>Spider-Man 2</h3>
+<p>Marvel Superhero Adventure</p>
+</div>
+
+<div class="game-card">
+<h3>God of War Ragnarok</h3>
+<p>Epic Norse Mythology Story</p>
+</div>
+
+<div class="game-card">
+<h3>Tekken 8</h3>
+<p>Competitive Fighting Game</p>
+</div>
+
+<div class="game-card">
+<h3>Forza Horizon 5</h3>
+<p>Open world racing simulator</p>
+</div>
+
+<div class="game-card">
+<h3>GTA V</h3>
+<p>Open World Action</p>
+</div>
+
+<div class="game-card">
+<h3>EA FC 26</h3>
+<p>Football Simulator</p>
+</div>
+
+</div>
+</div>
+
+<div class="games-section">
+
+<div class="games-heading">
+<h2>🎮 Playstation 4</h2>
+<p>Exclusive console gaming experience.</p>
+</div>
+
+<div class="games-grid">
+
+<div class="game-card">
+<h3>Gran Turismo 7</h3>
+<p>Racing Simulator</p>
+</div>
+
+<div class="game-card">
+<h3>F1 23</h3>
+<p>Formula 1 racing Simulator</p>
+</div>
+
+<div class="game-card">
+<h3>Need For Speed</h3>
+<p>Open World Nostalgic Racing Simulator</p>
+</div>
+</div>
+
+<div class="games-heading">
+<h2>🥽 VR gaming</h2>
+<p>Exclusive Virtual Reality experience.</p>
+</div>
+
+<div class="games-grid">
+
+<div class="game-card">
+<h3>Resident Evil</h3>
+<p>Horror Game</p>
+</div>
+
+<div class="game-card">
+<h3>VR World</h3>
+<p>A Virtual World Experience</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+<h2>Gamers Burnout</h2>
+<p>Gaming is not a Crime.</p>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const els=document.querySelectorAll('.card,.game-card,.setup-card,.pricing-card,.tournament-card,.gallery-box,.info-box');
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('scroll-reveal');}});
+ },{threshold:0.15});
+ els.forEach(el=>io.observe(el));
+});
+</script>
+
+
+<script>
+document.addEventListener('mousemove',e=>{
+ document.body.style.setProperty('--x',e.clientX+'px');
+ document.body.style.setProperty('--y',e.clientY+'px');
+});
+</script>
+</body>
+</html>

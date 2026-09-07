@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gamers Burnout Gaming Cafe">
+    <title>Setup | Gamers Burnout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <h1>Gamers Burnout</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="setup.html">Setup</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="page">
+
+    <div class="page-title">
+        <h2>Gaming Setup</h2>
+        <p>
+            High-end gaming hardware built for smooth gameplay,
+            streaming and competitive esports.
+        </p>
+    </div>
+
+    <div class="setup-grid">
+
+        <div class="setup-card">
+            <h3>⚡ Gaming PCs</h3>
+            <ul>
+                <li>AMD Ryzen 5 Processor</li>
+                <li>B450 Pro Motherboard</li>
+                <li>RTX 3050 12GB GPU</li>
+                <li>16GB DDR4 RAM</li>
+                <li>144Hz MSI Gaming Monitor</li>
+            </ul>
+        </div>
+
+        <div class="setup-card">
+            <h3>🎮 Console Arena</h3>
+            <ul>
+                <li>PlayStation 4</li>
+                <li>PlayStation 5</li>
+                <li>DualSense Controllers</li>
+                <li>4K Gaming Display</li>
+            </ul>
+        </div>
+
+        <div class="setup-card">
+            <h3>🚀 Gaming Accessories</h3>
+            <ul>
+                <li>ANT Esports Mouse</li>
+                <li>Mechanical Keyboards</li>
+                <li>RGB Gaming Headsets</li>
+                <li>Speed Gaming Mousepads</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>Gamers Burnout</h2>
+
+    <p>
+        Chosen the best gear to maximize your experience.
+    </p>
+
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const els=document.querySelectorAll('.card,.game-card,.setup-card,.pricing-card,.tournament-card,.gallery-box,.info-box');
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('scroll-reveal');}});
+ },{threshold:0.15});
+ els.forEach(el=>io.observe(el));
+});
+</script>
+
+
+<script>
+document.addEventListener('mousemove',e=>{
+ document.body.style.setProperty('--x',e.clientX+'px');
+ document.body.style.setProperty('--y',e.clientY+'px');
+});
+</script>
+</body>
+</html>
